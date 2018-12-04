@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = ""// البرفكس هنا
+var prefix = "#"// البرفكس هنا
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -109,7 +109,7 @@ client.on('message',async message => {
 
 
 client.on('message', function(message) {
-	const myID = "252813587188416512";
+	const myID = "228139766573432832";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "نيم")) {
 		        if(message.author.id !== myID) return;
